@@ -1,0 +1,55 @@
+#intro {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/bg/Background_Intro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tags {
+    display: flex;
+    justify-content: space-around;
+    width: 1040px;
+    margin-top: 80px;
+}
+
+p {
+    margin-top: 8px 20px;
+    max-width: 680px;
+}
+
+#avatar {
+    margin-block: 120px 64px;
+
+    &>img {
+        width: 87px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+
+}
+
+.profile {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: -5px -5px 0px -5px;
+        border: solid 2px var(--red);
+        border-radius: 100%;
+    }
+    figcaption {
+        position: absolute;
+
+        bottom: 0;
+        right: 0;
+    }
+}
+
