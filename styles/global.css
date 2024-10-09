@@ -8,6 +8,7 @@ body {
     font: var(--text-md);
     color: var(--gray-600);
     text-align: center;
+    background-color: var(--gray-200);
 }
 
 :root {
@@ -39,3 +40,8 @@ body {
     --text-sm: 14px/140% var(--font-family--maven);
 
 }
+
+h3 + h2 {
+    margin-block: 8px 56px;
+}
+

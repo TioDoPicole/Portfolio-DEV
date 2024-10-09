@@ -1,0 +1,56 @@
+#project {
+    width: 100vw;
+    min-height: 750px;
+    background-color: var(--gray-200);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &>h3 {
+        margin-top: 72px;
+    }
+}
+
+#card {
+    width: 330px;
+    height: 280px;
+
+    padding: 12px;
+    background-color: var(--gray-300);
+
+    text-align: left;
+
+    border-radius: 12px;
+
+
+    h3 {
+        margin-block: 24px 8px;
+    }
+
+    img {
+        width: 306px;
+        height: 156px;
+        border-radius: 8px;
+    }
+
+    &:hover {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: -5px -5px 0px -5px;
+            border: solid 2px var(--gray-600);
+            border-radius: 12px;
+        }
+    }
+}
+
+#cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 144px;
+
+}

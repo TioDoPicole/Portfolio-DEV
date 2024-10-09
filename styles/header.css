@@ -1,12 +1,9 @@
-#intro {
+#info {
     width: 100vw;
-    height: 100vh;
+    height: 750px;
     background-image: url(../assets/bg/Background_Intro.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#info {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -50,6 +47,13 @@ p {
 
         bottom: 0;
         right: 0;
+    }
+}
+
+nav + img {
+    margin-top: 94px;
+    &:hover {
+        fill: blue;
     }
 }
 
